@@ -44,16 +44,16 @@ export default function HeroSection() {
         className="absolute bottom-20 right-10 w-56 h-56 rounded-full bg-blue-600/20 blur-3xl"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl mt-12 px-6 md:px-16 min-h-screen grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      <div className="relative z-10 mx-auto max-w-7xl mt-12 px-6 md:px-16 min-h-screen grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left Content */}
         <div className="flex flex-col justify-center">
           <motion.h1
             ref={title}
             className="text-4xl md:text-6xl font-bold text-white leading-tight"
           >
-            Empower Your Digital Vision
+            Building Powerful Digital Experiences
             <span className="block mt-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              with Next-Gen Solutions
+              That Grow Modern Brands
             </span>
           </motion.h1>
 
@@ -61,27 +61,12 @@ export default function HeroSection() {
             ref={subtitle}
             className="mt-6 text-gray-300 text-base md:text-xl leading-relaxed max-w-xl"
           >
-            We build innovative web experiences for modern businesses, combining creativity, technology, and sleek design.
+            At AR Technology, we create modern, scalable, and reliable digital
+            solutions designed to help brands establish a strong online
+            presence and grow with confidence in a fast-evolving digital world.
           </motion.p>
 
-          <motion.div ref={buttons} className="mt-10 flex flex-wrap gap-6">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              href="#services"
-              className="px-8 py-3 font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-400 rounded-lg shadow-lg"
-            >
-              Get Started
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              href="#contact"
-              className="px-8 py-3 font-semibold border border-white/30 rounded-lg text-white backdrop-blur-md hover:border-cyan-400 hover:text-cyan-300"
-            >
-              Contact Us
-            </motion.a>
-          </motion.div>
+        
         </div>
 
         {/* Right Visual */}
@@ -93,7 +78,7 @@ export default function HeroSection() {
         >
           <img
             src="/left.png"
-            alt="Digital Illustration"
+            alt="AR Technology Digital Illustration"
             className="w-full max-w-md md:max-w-xl"
           />
         </motion.div>

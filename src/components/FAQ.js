@@ -6,34 +6,34 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "How does AR integrate with Shopify stores?",
+    question: "What services does AR Technology provide?",
     answer:
-      "Our AR solutions integrate directly with Shopify themes and product pages, enabling WebAR and 3D experiences without disrupting existing store performance or checkout flows.",
+      "AR Technology offers ecommerce development, web platform solutions, digital marketing, brand promotion, and performance-driven advertising across multiple online marketplaces and websites.",
   },
   {
-    question: "Do customers need to install an app to use AR?",
+    question: "Which ecommerce platforms do you work with?",
     answer:
-      "No. Our technology is browser-based (WebAR), allowing customers to experience AR directly through mobile and desktop browsers supported by Shopify.",
+      "We work with Shopify, Amazon, Etsy, TikTok Shop, eBay, Walmart, and WordPress, providing customized solutions tailored to each platform’s requirements.",
   },
   {
-    question: "What types of products work best with AR on Shopify?",
+    question: "Do you offer custom website development?",
     answer:
-      "AR is highly effective for furniture, fashion, accessories, beauty products, electronics, and custom items where visualization improves purchase confidence.",
+      "Yes. We design and develop custom, responsive websites focused on performance, usability, and scalability for growing businesses.",
   },
   {
-    question: "Will AR impact website loading speed?",
+    question: "Can you help with digital marketing and paid ads?",
     answer:
-      "All AR assets are optimized for performance using compression, lazy loading, and device-aware rendering to ensure fast page loads and smooth interactions.",
+      "Absolutely. We manage digital marketing campaigns, paid ads, and brand promotion strategies designed to increase visibility, traffic, and conversions.",
   },
   {
-    question: "Is AR compatible with existing Shopify themes?",
+    question: "Will my website be optimized for speed and SEO?",
     answer:
-      "Yes. Our solutions are designed to be theme-agnostic and work seamlessly with both custom and popular Shopify themes.",
+      "Yes. All our projects follow performance and SEO best practices, including optimized assets, clean code structure, and mobile-first implementation.",
   },
   {
-    question: "Can AR experiences scale with high-traffic stores?",
+    question: "Do you support long-term growth and maintenance?",
     answer:
-      "Absolutely. Our infrastructure supports scalable delivery, caching, and CDN-backed assets suitable for mid-size and enterprise-level Shopify businesses.",
+      "We provide ongoing support, optimization, and scaling solutions to ensure your digital platforms continue to perform as your business grows.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function FAQ() {
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs tracking-wide text-white/70"
           >
             <span className="h-2 w-2 rounded-full bg-[#6A7CF5] shadow-[0_0_18px_rgba(106,124,245,0.75)]" />
-            Shopify AR knowledge base
+            AR Technology FAQ
           </motion.div>
 
           <motion.h2
@@ -77,8 +77,8 @@ export default function FAQ() {
             transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
             className="mt-4 text-sm md:text-base text-white/70"
           >
-            Clear answers to common questions about AR technology for Shopify-based
-            eCommerce businesses.
+            Answers to common questions about our services, platforms, and
+            digital solutions.
           </motion.p>
         </div>
 

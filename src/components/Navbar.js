@@ -40,11 +40,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center h-full">
           <Image
-            src="/logo.webp"
+            src="/logo.png"
             alt="Logo"
-            width={120}
-            height={50}
-            className="w-[120px] h-auto"
+            width={100}
+            height={30}
+            className="w-[90px] h-auto"
           />
         </Link>
 

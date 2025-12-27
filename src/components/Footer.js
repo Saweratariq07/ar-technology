@@ -1,18 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaGithub,
 } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 export default function Footer() {
-  const socials = [FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub];
+  const socials = [FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn];
 
   return (
     <footer className="relative overflow-hidden bg-[#0B0D12] text-white/75">
@@ -32,21 +30,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3">
-              <h2 className="text-xl font-semibold text-white tracking-wide">
-                AR <span className="text-[#6A7CF5]">TECHNOLOGY</span>
-              </h2>
-            </div>
+            <h2 className="text-xl font-semibold text-white tracking-wide">
+              AR <span className="text-[#6A7CF5]">TECHNOLOGY</span>
+            </h2>
 
             <p className="mt-4 text-sm leading-relaxed text-white/65">
-              AR TECHNOLOGY is a software company delivering enterprise-grade
-              Augmented Reality solutions for Shopify eCommerce—built for
-              performance, scalability, and immersive digital experiences.
+              AR Technology is a digital commerce and marketing company helping
+              brands grow across Shopify, Amazon, Etsy, TikTok Shop, eBay,
+              Walmart, and WordPress through scalable eCommerce solutions,
+              performance marketing, and brand promotion.
             </p>
 
             <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/60 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-[#6A7CF5]" />
-              WebAR • 3D • Shopify-Ready
+              eCommerce • Marketing • Growth
             </div>
           </div>
 
@@ -54,19 +51,23 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white">Quick Links</h3>
             <ul className="mt-4 space-y-2 text-sm text-white/65">
-              {["Home", "Solutions", "Technology", "Industries", "Company"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href={`#${item.toLowerCase()}`}
-                      className="inline-flex items-center gap-2 px-2 py-1 rounded-lg transition hover:bg-white/5 hover:text-white"
-                    >
-                      <span className="h-1.5 w-1.5 rounded-full bg-white/25" />
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "Home",
+                "Services",
+                "Platforms",
+                "Case Studies",
+                "Contact",
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase().replace(" ", "")}`}
+                    className="inline-flex items-center gap-2 px-2 py-1 rounded-lg transition hover:bg-white/5 hover:text-white"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-white/25" />
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -78,21 +79,40 @@ export default function Footer() {
                 <span className="h-9 w-9 flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-[#6A7CF5]">
                   <MdLocationOn />
                 </span>
-                Lahore, Pakistan
+                <a
+                  href="https://maps.app.goo.gl/LU4GBDZx3DXhRXtw5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                 MD Plaza Rahimyar khan, Pakistan
+                </a>
               </li>
 
               <li className="flex gap-3">
                 <span className="h-9 w-9 flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-[#6A7CF5]">
                   <MdEmail />
                 </span>
-                contact@artechnology.com
+                <a
+                  href="mailto:artechnology73@gmail.com"
+                  className="hover:underline"
+                >
+                  artechnology73@gmail.com
+                </a>
               </li>
 
               <li className="flex gap-3">
                 <span className="h-9 w-9 flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-[#6A7CF5]">
                   <MdPhone />
                 </span>
-                +92 319 1628653
+                <a
+                  href="https://wa.me/923131173799"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  +92 313 1173799
+                </a>
               </li>
             </ul>
           </div>
@@ -101,7 +121,8 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white">Updates</h3>
             <p className="mt-4 text-sm text-white/65">
-              Product improvements and AR platform updates.
+              Insights on eCommerce growth, ads performance, and digital
+              marketing strategies.
             </p>
 
             <form className="mt-5 flex gap-2">
@@ -120,7 +141,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-white/10 py-8">
           <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} AR TECHNOLOGY. All rights reserved.
+            © {new Date().getFullYear()} AR Technology. All rights reserved.
           </p>
 
           <div className="flex gap-3">

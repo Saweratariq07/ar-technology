@@ -29,7 +29,7 @@ export default function CompanyOverview() {
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs tracking-wide text-white/70"
             >
               <span className="h-2 w-2 rounded-full bg-[#6A7CF5] shadow-[0_0_18px_rgba(106,124,245,0.75)]" />
-              Enterprise AR for Shopify commerce
+              Digital solutions for modern businesses
             </motion.div>
 
             <motion.h2
@@ -40,7 +40,7 @@ export default function CompanyOverview() {
               transition={{ duration: 0.75, ease: "easeOut", delay: 0.06 }}
               className="mt-5 text-3xl md:text-4xl font-semibold leading-tight text-white"
             >
-              Who we are — <span className="text-[#6A7CF5]">AR infrastructure</span> for product-led experiences
+              Who we are — <span className="text-[#6A7CF5]">AR Technology</span> builds scalable digital systems
             </motion.h2>
 
             <motion.p
@@ -51,12 +51,13 @@ export default function CompanyOverview() {
               transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
               className="mt-5 text-base md:text-lg leading-relaxed text-white/70"
             >
-              We build production-grade Augmented Reality capabilities for Shopify stores—helping teams deliver
-              accurate product visualization, interactive 3D, and WebAR experiences designed for speed, compatibility,
-              and brand consistency across devices.
+              AR Technology is a results-driven digital company focused on building
+              reliable, high-performance web platforms and ecommerce solutions.
+              We help brands grow their online presence through clean development,
+              strategic design, and data-backed digital execution.
             </motion.p>
 
-            {/* Feature chips */}
+            {/* Feature cards */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -65,10 +66,26 @@ export default function CompanyOverview() {
               className="mt-8 grid gap-3 sm:grid-cols-2"
             >
               {[
-                { icon: <FiLayers />, title: "Shopify-ready delivery", desc: "Theme-compatible components and asset pipelines." },
-                { icon: <FiSmartphone />, title: "Mobile-first AR", desc: "Responsive interactions for iOS/Android browsers." },
-                { icon: <FiZap />, title: "Performance-focused", desc: "Optimized loading, compression, and caching strategy." },
-                { icon: <FiShield />, title: "Enterprise controls", desc: "Governance, versioning, and consistent QA standards." },
+                {
+                  icon: <FiLayers />,
+                  title: "Ecommerce platforms",
+                  desc: "Shopify, Amazon, Etsy, TikTok Shop, eBay, Walmart integrations.",
+                },
+                {
+                  icon: <FiSmartphone />,
+                  title: "Responsive web development",
+                  desc: "Mobile-first websites built for speed, usability, and scale.",
+                },
+                {
+                  icon: <FiZap />,
+                  title: "Growth-focused execution",
+                  desc: "Conversion optimization, performance tuning, and analytics.",
+                },
+                {
+                  icon: <FiShield />,
+                  title: "Reliable & secure delivery",
+                  desc: "Clean code, structured workflows, and production-ready builds.",
+                },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -81,7 +98,9 @@ export default function CompanyOverview() {
                     </div>
                     <div>
                       <h3 className="text-sm font-semibold text-white">{item.title}</h3>
-                      <p className="mt-1 text-sm leading-relaxed text-white/65">{item.desc}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-white/65">
+                        {item.desc}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -101,17 +120,14 @@ export default function CompanyOverview() {
               {/* Gradient frame */}
               <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-[#6A7CF5]/55 via-[#7C3AED]/40 to-[#6A7CF5]/25 blur-[10px]" />
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5">
-                {/* Image (Unsplash – office/team theme) */}
                 <div className="relative aspect-[16/11] w-full">
                   <img
                     src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
-                    alt="Team collaborating in a modern office"
+                    alt="AR Technology team collaboration"
                     className="h-full w-full object-cover opacity-[0.92]"
                     loading="lazy"
                   />
-                  {/* Overlay for futuristic tone */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/35 to-[#6A7CF5]/20" />
-                  {/* Subtle grid */}
                   <div
                     className="absolute inset-0 opacity-35"
                     style={{
@@ -122,27 +138,26 @@ export default function CompanyOverview() {
                   />
                 </div>
 
-                {/* Bottom info bar */}
                 <div className="flex flex-col gap-2 border-t border-white/10 px-5 py-4 md:flex-row md:items-center md:justify-between">
                   <p className="text-sm text-white/70">
-                    Built for Shopify ecosystems: themes, variants, media, and mobile browsers.
+                    Designed for scalable ecommerce and digital growth.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="h-2 w-2 rounded-full bg-emerald-400/90" />
-                    <span className="text-xs tracking-wide text-white/60">Operational, scalable, production-first</span>
+                    <span className="text-xs tracking-wide text-white/60">
+                      Professional • Reliable • Growth-driven
+                    </span>
                   </div>
                 </div>
               </div>
 
-              {/* Floating micro-cards */}
+              {/* Floating tags */}
               <div className="pointer-events-none absolute -bottom-6 left-6 hidden gap-3 md:flex">
-                {["WebAR", "3D Assets", "Optimized Media"].map((t, idx) => (
+                {["Ecommerce", "Web Platforms", "Digital Growth"].map((t, idx) => (
                   <div
                     key={t}
                     className="rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-xs text-white/70 backdrop-blur"
-                    style={{
-                      transform: `translateY(${idx * 6}px)`,
-                    }}
+                    style={{ transform: `translateY(${idx * 6}px)` }}
                   >
                     <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-[#6A7CF5]" />
                     {t}

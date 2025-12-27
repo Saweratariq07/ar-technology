@@ -1,9 +1,11 @@
+import Client from "@/components/Client";
 import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import OurServices from "@/components/OurSecrives";
+import Portfolio from "@/components/Portfolio";
 import Team from "@/components/Team";
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
       <OurServices />
       <Team/>
       <FAQ />
+      <Portfolio/>
+      <Client/>
      <ContactForm/>
      <Footer/>
     </div>
