@@ -6,13 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const teamMembers = [
-  { name: "Muhammad Yasir", role: "Founder & CEO", image: "/download.jpg" },
-  { name: "Sawera Malik", role: "Full Stack Web Developer", image: "/download.jpg" },
-  { name: "Fakhar Malik", role: "AI & Python Developer", image: "/download.jpg" },
-  { name: "Muhammad Sajjad", role: "Digital Marketing & Automation Expert", image: "/download.jpg" },
-  { name: "Muhammad Mujahid", role: "Social Media Manager", image: "/download.jpg" },
-  { name: "Muhammad Hassan", role: "Content Creator", image: "/download.jpg" },
-  { name: "Tahir Iqbal", role: "Customer Support Specialist", image: "/download.png" },
+  { name: "Ahmad Rafique", role: "Founder & CEO", image: "/ahmed.jpeg" },
+  { name: "Hannan Mohammad Arshad", role: "HR manager, Ecommerce managment", image: "/hannan.jpeg" },
+  { name: "Muhammad Ali Shahbaz", role: "Sales Officer", image: "/ali.jpeg" },
+  { name: "Shahzaib Sajjad", role: "Expert Shopify Developer", image: "/shezad.jpeg" },
+  { name: "Sawera Tariq", role: "Business Developer", image: "/sawera.jpg" },
+  { name: "Eman Naeem", role: "Expert Digital Marketer", image: "/eman.jpeg" },
 ];
 
 export default function Team() {
