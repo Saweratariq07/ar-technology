@@ -30,14 +30,13 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
         open
-          ? "bg-[#ffffff] backdrop-blur-md shadow-md"
+          ? "bg-black text-white shadow-md"        // mobile menu open = black
           : isScrolled
-          ? "bg-[#ffffff] text-black backdrop-blur-md shadow-md"
-          : "bg-[#ffffff]"
+          ? "bg-white text-blue-600 shadow-md"     // scrolled
+          : "bg-white text-blue-600"               // default
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 h-[75px]">
-        {/* Logo */}
         <Link href="/" className="flex items-center h-full">
           <Image
             src="/logo.png"
@@ -48,17 +47,16 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 h-full items-center">
           {links.map((link, i) => (
             <motion.a
               key={i}
               href={link.href}
-              className="relative inline-block capitalize font-medium text-lg text-black"
+              className="relative inline-block capitalize font-medium text-lg text-blue-600"
             >
               {link.name}
               <motion.span
-                className="absolute left-0 -bottom-1 h-[2px] text-black  bg-white"
+                className="absolute left-0 -bottom-1 h-[2px] bg-blue-600"
                 initial={{ width: 0 }}
                 whileHover={{ width: "100%" }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -67,16 +65,16 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile Toggle */}
         <button
-          className="md:hidden text-black z-50 relative"
+          className={`md:hidden z-50 relative ${
+            open ? "text-white" : "text-blue-600"
+          }`}
           onClick={() => setOpen(!open)}
         >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {open && (
           <motion.nav
@@ -84,7 +82,7 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 right-0 w-2/3 h-full bg-[#262a32] shadow-lg flex flex-col p-6 space-y-6 md:hidden z-40"
+            className="fixed top-0 right-0 w-2/3 h-full bg-black text-white shadow-lg flex flex-col p-6 space-y-6 md:hidden z-40"
           >
             {links.map((link, i) => (
               <motion.a
@@ -95,7 +93,7 @@ export default function Navbar() {
               >
                 {link.name}
                 <motion.span
-                  className="absolute left-0 bg-gray-800 -bottom-1 h-[2px] bg-white"
+                  className="absolute left-0 -bottom-1 h-[2px] bg-white"
                   initial={{ width: 0 }}
                   whileHover={{ width: "100%" }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}

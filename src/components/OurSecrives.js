@@ -122,7 +122,7 @@ export default function CompanyOverview() {
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5">
                 <div className="relative aspect-[16/11] w-full">
                   <img
-                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
+                    src="/download.png"
                     alt="AR Technology team collaboration"
                     className="h-full w-full object-cover opacity-[0.92]"
                     loading="lazy"

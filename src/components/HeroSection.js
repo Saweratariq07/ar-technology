@@ -32,7 +32,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-[#030809] overflow-hidden">
+    <section className="relative w-full min-h-screen pt-14 bg-[#030809] overflow-hidden">
       {/* Floating background elements */}
       <motion.div
         {...floatAnim}

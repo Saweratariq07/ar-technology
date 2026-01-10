@@ -6,7 +6,7 @@ import Image from "next/image";
 // Portfolio items (replace images with real project screenshots later)
 const portfolioItems = [
   {
-    title: "Shopify AR Store",
+    title: "MYtrenddbazar",
     description: "Interactive 3D product experiences integrated with Shopify.",
     image: "https://images.unsplash.com/photo-1605902711622-cfb43c44327f?auto=format&fit=crop&w=1600&q=80",
   },
