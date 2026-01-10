@@ -9,7 +9,7 @@ const teamMembers = [
   { name: "Ahmad Rafique", role: "Founder & CEO", image: "/ahmed.jpeg" },
   { name: "Hannan Mohammad Arshad", role: "HR manager, Ecommerce managment", image: "/hannan.jpeg" },
   { name: "Muhammad Ali Shahbaz", role: "Sales Officer", image: "/ali.jpeg" },
-  { name: "Shahzaib Sajjad", role: "Expert Shopify Developer", image: "/shezad.jpeg" },
+  { name: "Shahzaib Sajjad", role: "Expert Shopify Developer", image: "/shezad.png" },
   { name: "Sawera Tariq", role: "Business Developer", image: "/sawera.jpg" },
   { name: "Eman Naeem", role: "Expert Digital Marketer", image: "/eman.jpeg" },
 ];
